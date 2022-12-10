@@ -1,0 +1,28 @@
+section {
+  &.banner {
+    min-height: 300px;
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50px;
+      max-width: 500px;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+    }
+    &.about-banner {
+      .content {
+        left: auto;
+        right: 50px;
+        text-align: right;
+      }
+    }
+  }
+}

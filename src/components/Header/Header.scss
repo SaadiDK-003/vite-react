@@ -1,0 +1,15 @@
+header {
+  min-height: 100px;
+  width: 100%;
+  @include flex(space-between, center, 0);
+  nav {
+    ul {
+      @include flex(center, center, 20);
+      li {
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+}
