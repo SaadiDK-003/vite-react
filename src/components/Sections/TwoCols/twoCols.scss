@@ -1,0 +1,40 @@
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  overflow: hidden;
+  .box {
+    @include flex(center, center, 0);
+    max-height: 500px;
+    width: 100%;
+    animation: slideInLeft 2s forwards 1.5s;
+    .content {
+      width: 100%;
+      @include flex(center, center, 10, column);
+      text-align: center;
+      overflow: hidden;
+      padding: 10px;
+      img{
+        transition: all .5s ease;
+        filter: grayscale(100) blur(2px);
+        &:hover{
+            filter: none;
+        }
+      }
+      .img1 {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+    }
+  }
+  &.reverse {
+    direction: rtl;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .grid-box {
+    grid-template-columns: 1fr;
+  }
+}

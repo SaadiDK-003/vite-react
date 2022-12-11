@@ -22,6 +22,11 @@ body {
   padding-inline: 15px;
 }
 
+section{
+  margin-block: 30px;
+}
+
 @import "./components/Header/Header.scss";
 @import "./components/Banner/Banner.scss";
+@import "./components/Sections/TwoCols/twoCols.scss";
 @import "./components/Footer/Footer.scss";
